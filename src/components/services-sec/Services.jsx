@@ -8,7 +8,7 @@ const ServicesSec = styled.section`
   padding-bottom: 10vh;
 `;
 
-const MainPara = styled.p`
+export const MainPara = styled.p`
   line-height: 4vh;
   font-weight: 300;
   color: #717173;
