@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "./Navbar.css";
 
-const navSec = styled.nav`
+const avSec = styled.nav`
   background-color: black;
 `;
 
@@ -80,7 +80,7 @@ export const Header = () => {
     //       </div>
     //     </div>
     //   </div>
-    <navSec>
+    <avSec>
       <NavHeader>
         <nav
           className="navbar  navbar-expand-lg navbar-light top-navbar"
@@ -151,7 +151,7 @@ export const Header = () => {
           </div>
         </nav>
       </NavHeader>
-    </navSec>
+    </avSec>
     // </div>
   );
 };
