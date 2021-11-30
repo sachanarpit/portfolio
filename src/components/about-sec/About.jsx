@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import Tab from "@mui/material/Tab";
+import { TabContext } from "@mui/lab/TabContext";
+import { TabList } from "@mui/lab/TabList";
+import { TabPanel } from "@mui/lab/TabPanel";
+import Box from "@mui/material/Box";
+import { useState } from "react";
 
 export const RowGrid = styled.div`
   margin: auto;
@@ -18,7 +24,7 @@ export const MainH1 = styled.h1`
   font-family: "Poppins", sans-serif;
   word-break: break-word;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 6vw;
   line-height: 1.4074;
 `;
 
@@ -43,6 +49,12 @@ export const AboutPara = styled.p`
 export const AboutPic = styled.img``;
 
 export const About = () => {
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <AboutSec id="about-section" className="p-100 pb-2 bg-one-dark">
       <AboutDiv className="container">
@@ -64,17 +76,21 @@ export const About = () => {
                 slightly believable. If you are going to use a passage of Lorem
                 Ipsum,
               </AboutPara>
-              <div className="btn-container">
-                <button className="tab-btn active" data-id="history">
-                  history
-                </button>
-                <button className="tab-btn" data-id="vision">
-                  vision
-                </button>
-                <button className="tab-btn" data-id="goals">
-                  goals
-                </button>
-              </div>
+              <TabContext value={value}>
+                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                  <TabList
+                    onChange={handleChange}
+                    aria-label="lab API tabs example"
+                  >
+                    <Tab label="Item One" value="1" />
+                    <Tab label="Item Two" value="2" />
+                    <Tab label="Item Three" value="3" />
+                  </TabList>
+                </Box>
+                <TabPanel value="1">Item One</TabPanel>
+                <TabPanel value="2">Item Two</TabPanel>
+                <TabPanel value="3">Item Three</TabPanel>
+              </TabContext>
             </AboutData>
           </div>
         </RowGrid>

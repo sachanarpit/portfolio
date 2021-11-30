@@ -18,12 +18,16 @@ const Logo = styled.img`
 `;
 
 const NavHeader = styled.header`
-  background-color: black;
+  background-color: transparent;
   color: white;
 `;
 
 const NavElement = styled.span`
   color: white;
+`;
+
+const MobileBtn = styled.span`
+  background-color: white;
 `;
 
 export const Header = () => {
@@ -102,7 +106,7 @@ export const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <MobileBtn className="navbar-toggler-icon .navbar-light"></MobileBtn>
             </button>
 
             <div
