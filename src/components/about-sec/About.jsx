@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Tab from "@mui/material/Tab";
-import { TabContext } from "@mui/lab/TabContext";
-import { TabList } from "@mui/lab/TabList";
-import { TabPanel } from "@mui/lab/TabPanel";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 import Box from "@mui/material/Box";
 import { useState } from "react";
 
