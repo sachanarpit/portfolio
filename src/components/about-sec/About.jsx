@@ -77,14 +77,40 @@ export const About = () => {
                 Ipsum,
               </AboutPara>
               <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                <Box
+                  sx={{
+                    borderBottom: 1,
+                    borderColor: "divider",
+                    color: "white",
+                  }}
+                >
                   <TabList
                     onChange={handleChange}
                     aria-label="lab API tabs example"
+                    textColor="secondary"
                   >
-                    <Tab label="Item One" value="1" />
-                    <Tab label="Item Two" value="2" />
-                    <Tab label="Item Three" value="3" />
+                    <Tab
+                      sx={{
+                        color: "white",
+                      }}
+                      text
+                      label="Item One"
+                      value="1"
+                    />
+                    <Tab
+                      sx={{
+                        color: "white",
+                      }}
+                      label="Item Two"
+                      value="2"
+                    />
+                    <Tab
+                      sx={{
+                        color: "white",
+                      }}
+                      label="Item Three"
+                      value="3"
+                    />
                   </TabList>
                 </Box>
                 <TabPanel value="1">Item One</TabPanel>

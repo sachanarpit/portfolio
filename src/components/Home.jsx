@@ -1,6 +1,6 @@
 import { About } from "./about-sec/About";
 import { Hero } from "./Hero-sec/Hero";
-import { Header } from "./navbar-sec/Navbar";
+import { Header } from "./project-sec/navbar-sec/Navbar";
 import { Services } from "./services-sec/Services";
 
 export const Home = () => {
