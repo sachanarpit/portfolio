@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "./Navbar.css";
 
-const avSec = styled.nav`
+const NavSec = styled.nav`
   background-color: black;
 `;
 
@@ -32,7 +32,7 @@ export const Header = () => {
     //   <div className="header-wrapper">
     //     <div className="header-left">
     //       <div className="logo">
-    //         <a href="#">
+    //         <a >
     //           <img src="" alt="" />
     //         </a>
     //       </div>
@@ -80,14 +80,14 @@ export const Header = () => {
     //       </div>
     //     </div>
     //   </div>
-    <avSec>
+    <NavSec>
       <NavHeader>
         <nav
           className="navbar  navbar-expand-lg navbar-light top-navbar"
           data-toggle="sticky-onscroll"
         >
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand">
               <Logo
                 src="https://i.ibb.co/QXYBG4z/a-removebg-preview.png"
                 alt=""
@@ -111,38 +111,38 @@ export const Header = () => {
             >
               <ul className="navbar-nav pull-right">
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <a className="nav-link active">
                     <NavElement> Home</NavElement>
                   </a>
                   <NavItemEffect></NavItemEffect>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     <NavElement> Services</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     <NavElement> Our Work</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     <NavElement> Pricing</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     <NavElement> About</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link">
                     <NavElement> Contact</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="btn download-btn" href="#">
+                  <a className="btn download-btn">
                     <NavElement> Download Resume</NavElement>
                   </a>
                 </li>
@@ -151,7 +151,7 @@ export const Header = () => {
           </div>
         </nav>
       </NavHeader>
-    </avSec>
+    </NavSec>
     // </div>
   );
 };

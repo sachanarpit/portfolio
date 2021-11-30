@@ -36,7 +36,7 @@ export const AboutPara = styled.p`
   font-weight: 300;
   color: #717173;
   padding: 0;
-  webkit-font-smoothing: antialiased;
+
   font-family: "Poppins", sans-serif;
 `;
 
@@ -64,14 +64,14 @@ export const About = () => {
                 slightly believable. If you are going to use a passage of Lorem
                 Ipsum,
               </AboutPara>
-              <div class="btn-container">
-                <button class="tab-btn active" data-id="history">
+              <div className="btn-container">
+                <button className="tab-btn active" data-id="history">
                   history
                 </button>
-                <button class="tab-btn" data-id="vision">
+                <button className="tab-btn" data-id="vision">
                   vision
                 </button>
-                <button class="tab-btn" data-id="goals">
+                <button className="tab-btn" data-id="goals">
                   goals
                 </button>
               </div>
