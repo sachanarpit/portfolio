@@ -10,9 +10,10 @@ export const RowGrid = styled.div`
 export const AboutDiv = styled.div`
   background-color: #191919;
   color: white;
+  padding-bottom: 10vh;
 `;
 
-const AboutH1 = styled.h1`
+export const MainH1 = styled.h1`
   color: white;
   font-family: "Poppins", sans-serif;
   word-break: break-word;
@@ -26,12 +27,11 @@ const AboutData = styled.div`
 `;
 
 const AboutSec = styled.section`
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 10vh;
   background-color: #191919;
 `;
 
-const AboutPara = styled.p`
+export const AboutPara = styled.p`
   line-height: 4vh;
   font-weight: 300;
   color: #717173;
@@ -46,7 +46,7 @@ export const About = () => {
   return (
     <AboutSec id="about-section" className="p-100 pb-2 bg-one-dark">
       <AboutDiv className="container">
-        <RowGrid className="row d-flex align-items-end">
+        <RowGrid className="row d-flex align-items-end ">
           <div className="col-md-6 text-center">
             <AboutPic
               src="https://i.ibb.co/d5K8rPg/20210821-122531-2.jpg"
@@ -56,7 +56,7 @@ export const About = () => {
           </div>
           <div className="col-md-6">
             <AboutData className="col">
-              <AboutH1>About Me</AboutH1>
+              <MainH1>About Me</MainH1>
               <AboutPara>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by

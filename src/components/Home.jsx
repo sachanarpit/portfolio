@@ -1,6 +1,7 @@
 import { About } from "./about-sec/About";
 import { Hero } from "./Hero-sec/Hero";
 import { Header } from "./navbar-sec/Navbar";
+import { Services } from "./services-sec/Services";
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
       <Header />
       <Hero />
       <About />
+      <Services />
     </div>
   );
 };
