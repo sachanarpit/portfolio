@@ -23,7 +23,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/color/96/000000/react-native.png" />
+              <img
+                src="https://img.icons8.com/color/96/000000/react-native.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">React</h6>
             </div>
@@ -32,7 +35,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/color/96/000000/material-ui.png" />
+              <img
+                src="https://img.icons8.com/color/96/000000/material-ui.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">Material UI</h6>
             </div>
@@ -41,7 +47,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/color/96/000000/bootstrap.png" />
+              <img
+                src="https://img.icons8.com/color/96/000000/bootstrap.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">BootStrap</h6>
             </div>
@@ -50,7 +59,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/nolan/96/css-filetype.png" />
+              <img
+                src="https://img.icons8.com/nolan/96/css-filetype.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">CSS</h6>
             </div>
@@ -59,7 +71,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/fluency/96/000000/node-js.png" />
+              <img
+                src="https://img.icons8.com/fluency/96/000000/node-js.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">Node JS</h6>
             </div>
@@ -68,7 +83,7 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/nolan/96/js.png" />
+              <img src="https://img.icons8.com/nolan/96/js.png" alt="skills" />
               <br />
               <h6 className="h2 text-light">Express JS</h6>
             </div>
@@ -78,7 +93,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/color/96/000000/mongodb.png" />
+              <img
+                src="https://img.icons8.com/color/96/000000/mongodb.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">MongoDB</h6>
             </div>
@@ -88,7 +106,10 @@ export const ServiceGrid = () => {
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
             <div>
-              <img src="https://img.icons8.com/color/96/000000/amazon-web-services.png" />
+              <img
+                src="https://img.icons8.com/color/96/000000/amazon-web-services.png"
+                alt="skills"
+              />
               <br />
               <h6 className="h2 text-light">AWS</h6>
             </div>
