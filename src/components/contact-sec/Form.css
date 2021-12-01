@@ -1,0 +1,8 @@
+.form-area {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(198, 201, 216, 0.75);
+  background-color: transparent;
+  padding: 1.5em;
+  margin-top: 4vh;
+  font-family: inherit;
+}
