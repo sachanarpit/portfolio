@@ -64,7 +64,9 @@ function ImageSlide() {
           bgcolor: "background.default",
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <Typography>
+          <center> {images[activeStep].label}</center>
+        </Typography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}

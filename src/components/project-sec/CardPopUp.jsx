@@ -5,6 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import ReadMoreIcon from "@mui/icons-material/ReadMore";
 
 export default function CardPopup() {
   const [open, setOpen] = React.useState(false);
@@ -31,7 +32,9 @@ export default function CardPopup() {
 
   return (
     <div>
-      <Button onClick={handleClickOpen("paper")}>More Info</Button>
+      <Button onClick={handleClickOpen("paper")}>
+        Read More <ReadMoreIcon />
+      </Button>
 
       <Dialog
         open={open}

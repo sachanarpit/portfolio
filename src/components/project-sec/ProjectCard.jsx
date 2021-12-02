@@ -7,7 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ImageSlide from "./ImageSlide";
 import CardPopup from "./CardPopUp";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InsertLinkIcon from "@mui/icons-material/InsertLink";
 export default function ProjectCard() {
   return (
     <Card elevation={10} sx={{ maxWidth: 345 }}>
@@ -21,8 +22,12 @@ export default function ProjectCard() {
       </CardContent>
       <ImageSlide />
       <CardActions>
-        <Button size="small">More Details</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small">
+          <GitHubIcon />
+        </Button>
+        <Button size="small">
+          <InsertLinkIcon />
+        </Button>
         <CardPopup />
       </CardActions>
     </Card>
