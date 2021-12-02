@@ -5,28 +5,25 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ImageSlide from "./ImageSlide";
+import CardPopup from "./CardPopUp";
 
 export default function ProjectCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="https://i.imgur.com/tTwZXLy.gif"
-        alt="green iguana"
-      />
+    <Card elevation={10} sx={{ maxWidth: 345 }}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Make My Trip
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Full Stack React Application Including Frontend and Backend
         </Typography>
       </CardContent>
+      <ImageSlide />
       <CardActions>
-        <Button size="small">Share</Button>
+        <Button size="small">More Details</Button>
         <Button size="small">Learn More</Button>
+        <CardPopup />
       </CardActions>
     </Card>
   );

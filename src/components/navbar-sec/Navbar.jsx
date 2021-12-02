@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MobileNav from "./MobileNav";
 import "./Navbar.css";
 
 const NavSec = styled.nav`
@@ -107,6 +108,7 @@ export const Header = () => {
               aria-label="Toggle navigation"
             >
               <MobileBtn className="navbar-toggler-icon .navbar-light"></MobileBtn>
+              <MobileNav />
             </button>
 
             <div

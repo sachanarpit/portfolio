@@ -22,14 +22,14 @@ export const Project = () => {
             </MainPara>
             <div className="container">
               <div className="row">
-                <div className="col sm-2 p-3">
+                <div className="col xs-12 sm-6 p-4">
                   {" "}
                   <ProjectCard />{" "}
                 </div>
-                <div className="col sm-2 p-3">
+                <div className="col xs-12 sm-6 p-4">
                   <ProjectCard />
                 </div>
-                <div className="col sm-2 p-3">
+                <div className="col xs-12 sm-6 p-4">
                   <ProjectCard />
                 </div>
               </div>
