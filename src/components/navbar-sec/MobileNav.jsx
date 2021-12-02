@@ -39,16 +39,31 @@ export default function MobileNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "About", "Skills and Framework", "Project", "Contact Me"].map(
-          (text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          )
-        )}
+        <a href="#HomeP">
+          <ListItem button key="Home">
+            <ListItemText primary="Home" />
+          </ListItem>
+        </a>
+        <a href="#AboutP">
+          <ListItem button key="About">
+            <ListItemText primary="About" />
+          </ListItem>
+        </a>
+        <a href="#ServicesP">
+          <ListItem button key="Services">
+            <ListItemText primary="Services" />
+          </ListItem>
+        </a>
+        <a href="#ProjectP">
+          <ListItem button key="Project">
+            <ListItemText primary="Project" />
+          </ListItem>
+        </a>
+        <a href="#ContactP">
+          <ListItem button key="Contact">
+            <ListItemText primary="Contact" />
+          </ListItem>
+        </a>
       </List>
       <Divider />
       <List>
