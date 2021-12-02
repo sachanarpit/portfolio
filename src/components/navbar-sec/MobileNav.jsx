@@ -10,6 +10,7 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { ButtonMainP } from "../Hero-sec/Hero";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
@@ -80,7 +81,9 @@ export default function MobileNav() {
     <div>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)}>
+            <MenuOpenIcon />
+          </Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

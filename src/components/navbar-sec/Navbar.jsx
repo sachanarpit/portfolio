@@ -107,7 +107,6 @@ export const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <MobileBtn className="navbar-toggler-icon .navbar-light"></MobileBtn>
               <MobileNav />
             </button>
 
