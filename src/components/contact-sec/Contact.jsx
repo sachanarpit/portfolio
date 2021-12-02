@@ -12,7 +12,7 @@ const ContactSec = styled.section`
 export const Contact = () => {
   return (
     <div>
-      <ContactSec>
+      <ContactSec id="ContactP">
         <div className="container">
           <div className="row-md-2">
             <div class="col align-self-start">

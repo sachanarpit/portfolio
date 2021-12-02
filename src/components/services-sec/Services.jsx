@@ -19,7 +19,7 @@ export const MainPara = styled.p`
 
 export const Services = () => {
   return (
-    <ServicesSec>
+    <ServicesSec id="ServicesP">
       <div className="container">
         <div className="row-md-2 align-items-center text-center">
           <MainH1>Skills and FrameWork</MainH1>

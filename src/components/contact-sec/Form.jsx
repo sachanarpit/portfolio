@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Button } from "../Hero-sec/Hero";
+import { ButtonMainP } from "../Hero-sec/Hero";
 import "./Form.css";
 
 const FORMSPARK_ACTION_URL = "https://submit-form.com/pqiFZpgM";
@@ -53,6 +53,7 @@ export const ContactForm = () => {
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
       </div>
       <div className="mb-3">
@@ -63,6 +64,7 @@ export const ContactForm = () => {
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
       <div className="mb-3">
@@ -73,6 +75,7 @@ export const ContactForm = () => {
           placeholder="Your Subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
+          required
         />
       </div>
       <div className="mb-3">
@@ -83,12 +86,13 @@ export const ContactForm = () => {
           placeholder="Your Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          required
         ></textarea>
       </div>
       <br />
-      <Button type="submit" className="btn btn-primary">
+      <ButtonMainP type="submit" className="btn btn-primary">
         Submit
-      </Button>
+      </ButtonMainP>
     </MainForm>
   );
 };

@@ -12,7 +12,7 @@ const ProjectSec = styled.section`
 export const Project = () => {
   return (
     <div>
-      <ProjectSec>
+      <ProjectSec id="ProjectP">
         <div className="container">
           <div className="row-md-2 align-items-center text-center">
             <MainH1>Project & Work</MainH1>

@@ -10,6 +10,9 @@ const HeroHeading = styled.h1`
   font-family: "Poppins", sans-serif;
   text-align: left !important;
   margin-bottom: 5vh;
+  @media only screen and (max-width: 700px) {
+    font-size: 10vw;
+  }
 `;
 
 const ColorSpan = styled.span`
@@ -23,14 +26,22 @@ const HeroTitle = styled.span`
 
   text-align: left !important;
   color: white;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 3vw;
+  }
 `;
 
 const HeroDiv = styled.div`
   background-color: black;
   height: 80vh;
+
+  @media only screen and (max-width: 700px) {
+    height: 60vh;
+  }
 `;
 
-export const Button = styled.button`
+export const ButtonMainP = styled.button`
   margin-top: 0.5em;
   background-color: #f9004d;
   border: #f9004d;
@@ -53,11 +64,13 @@ export const Button = styled.button`
     background-color: transparent;
     margin-top: 0.3em;
   }
+  @media only screen and (max-width: 700px) {
+  }
 `;
 
 export const Hero = () => {
   return (
-    <HeroDiv className="rn-slider-area bg-image">
+    <HeroDiv id="HomeP" className="rn-slider-area bg-image">
       <div className="container">
         <div className="row" id="spaceHero">
           <div className="col-lg-12 mx-auto mar">
@@ -66,7 +79,7 @@ export const Hero = () => {
               {" "}
               Hello I'm <ColorSpan>Arpit</ColorSpan> Welcome to my World.{" "}
             </HeroHeading>
-            <Button>Download Resume</Button>
+            <ButtonMainP>Download Resume</ButtonMainP>
           </div>
         </div>
       </div>

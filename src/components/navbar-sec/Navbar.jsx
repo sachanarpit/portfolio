@@ -117,33 +117,33 @@ export const Header = () => {
             >
               <ul className="navbar-nav pull-right">
                 <li className="nav-item">
-                  <a className="nav-link active">
+                  <a href="#HomeP" className="nav-link active">
                     <NavElement> Home</NavElement>
                   </a>
                   <NavItemEffect></NavItemEffect>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
+                  <a href="#AboutP" className="nav-link">
                     <NavElement> Services</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
+                  <a href="#ServicesP" className="nav-link">
                     <NavElement> Our Work</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
+                  <a href="#ProjectP" className="nav-link">
                     <NavElement> Pricing</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
+                  <a href="#ContactP" className="nav-link">
                     <NavElement> About</NavElement>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
+                  <a href="#P" className="nav-link">
                     <NavElement> Contact</NavElement>
                   </a>
                 </li>

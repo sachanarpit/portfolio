@@ -23,6 +23,10 @@ export const MainH1 = styled.h1`
   font-weight: 700;
   font-size: 6vw;
   line-height: 1.4074;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 12vw;
+  }
 `;
 
 const AboutData = styled.div`
@@ -35,20 +39,34 @@ const AboutSec = styled.section`
 `;
 
 export const AboutPara = styled.p`
-  line-height: 4vh;
   font-weight: 300;
   color: #717173;
   padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 
   font-family: "Poppins", sans-serif;
+  @media only screen and (max-width: 700px) {
+    font-size: 4vw;
+    line-height: 25px;
+  }
 `;
 
 export const AboutPic = styled.img``;
 
 export const About = () => {
   return (
-    <AboutSec id="about-section" className="p-100 pb-2 bg-one-dark">
+    <AboutSec id="AboutP" className="p-100 pb-2 bg-one-dark">
       <AboutDiv className="container">
+        <div className="row-md-2 align-items-center text-center">
+          <MainH1>About Me</MainH1>
+        </div>
+
         <RowGrid className="row d-flex align-items-end ">
           <div className="col-md-6 text-center">
             <AboutPic
@@ -59,13 +77,12 @@ export const About = () => {
           </div>
           <div className="col-md-6">
             <AboutData className="col">
-              <MainH1>About Me</MainH1>
               <AboutPara>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which dont look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum,
+                Self-motivated and results-oriented full-stack web developer
+                with a focus on design and features. Creative person and
+                problem-solver who is interested in building user-friendly
+                products. Looking forward to working in a challenging role in a
+                reputed company to show my creative skills.
               </AboutPara>
               <AboutInfo />
             </AboutData>
