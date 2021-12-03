@@ -32,7 +32,16 @@ export default function CardPopup() {
 
   return (
     <div>
-      <Button onClick={handleClickOpen("paper")}>
+      <Button
+        style={{
+          color: "white",
+          backgroundColor: "#f8004c",
+          fontFamily: "Poppins,sans-serif;",
+          border: "1px solid #f8004c",
+          marginLeft: "1.5em",
+        }}
+        onClick={handleClickOpen("paper")}
+      >
         Read More <ReadMoreIcon />
       </Button>
 
@@ -61,8 +70,12 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
+          <Button style={{ color: "#f8004c" }} onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button style={{ color: "#f8004c" }} onClick={handleClose}>
+            Subscribe
+          </Button>
         </DialogActions>
       </Dialog>
     </div>

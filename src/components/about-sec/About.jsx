@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { useState } from "react";
-
 import { AboutInfo } from "./AboutInfo";
 export const RowGrid = styled.div`
   margin: auto;

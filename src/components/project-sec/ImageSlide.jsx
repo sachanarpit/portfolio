@@ -73,6 +73,7 @@ function ImageSlide() {
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
+        style={{ color: "#f8004c" }}
       >
         {images.map((step, index) => (
           <div key={step.label}>
@@ -85,6 +86,7 @@ function ImageSlide() {
                   maxWidth: 400,
                   overflow: "hidden",
                   width: "100%",
+                  color: "#f8004c",
                 }}
                 src={step.imgPath}
                 alt={step.label}
@@ -99,6 +101,7 @@ function ImageSlide() {
         activeStep={activeStep}
         nextButton={
           <Button
+            style={{ color: "#f8004c" }}
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -112,7 +115,12 @@ function ImageSlide() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            style={{ color: "#f8004c" }}
+            size="small"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (

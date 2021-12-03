@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import MobileNav from "./MobileNav";
 import "./Navbar.css";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import Button from "@mui/material/Button";
 
 const NavSec = styled.nav`
   background-color: black;
@@ -92,7 +97,7 @@ export const Header = () => {
           data-toggle="sticky-onscroll"
         >
           <div className="container">
-            <a className="navbar-brand">
+            <a href="#HomeP" className="navbar-brand">
               <Logo
                 src="https://i.ibb.co/QXYBG4z/a-removebg-preview.png"
                 alt=""
@@ -146,8 +151,30 @@ export const Header = () => {
                     <NavElement> Contact</NavElement>
                   </a>
                 </li>
+                <li>
+                  {" "}
+                  <ButtonGroup
+                    style={{ marginRight: "20px", marginLeft: "20px" }}
+                    variant="text"
+                    aria-label="text button group"
+                  >
+                    <Button style={{ color: "#f8004c" }}>
+                      <LinkedInIcon />
+                    </Button>
+                    <Button style={{ color: "#f8004c" }}>
+                      <GitHubIcon />
+                    </Button>
+                    <Button style={{ color: "#f8004c" }}>
+                      <TwitterIcon />
+                    </Button>
+                  </ButtonGroup>
+                </li>
                 <li className="nav-item">
-                  <a className="btn download-btn">
+                  <a
+                    href="https://drive.google.com/file/d/1blOQ_H4swKT5Szmixy9x39IWKrVS8t90/view?usp=sharing"
+                    target="_blank"
+                    className="btn download-btn"
+                  >
                     <NavElement> Download Resume</NavElement>
                   </a>
                 </li>

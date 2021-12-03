@@ -5,12 +5,16 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
+
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
 import { ButtonMainP } from "../Hero-sec/Hero";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+
+import ButtonGroup from "@mui/material/ButtonGroup";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
@@ -81,7 +85,26 @@ export default function MobileNav() {
     <div>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
+          <ButtonGroup
+            style={{ marginRight: "20px" }}
+            variant="text"
+            aria-label="text button group"
+          >
+            <Button style={{ color: "#f8004c" }}>
+              <LinkedInIcon />
+            </Button>
+            <Button style={{ color: "#f8004c" }}>
+              <GitHubIcon />
+            </Button>
+            <Button style={{ color: "#f8004c" }}>
+              <TwitterIcon />
+            </Button>
+          </ButtonGroup>
+
+          <Button
+            style={{ transform: "scale(1.8)", color: "#f8004c" }}
+            onClick={toggleDrawer(anchor, true)}
+          >
             <MenuOpenIcon />
           </Button>
           <SwipeableDrawer
