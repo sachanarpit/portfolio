@@ -1,0 +1,9 @@
+.hoverE:hover {
+  /* background-color: #f9004d; */
+  transition: 1s ease-in-out;
+  /* animation: fadeOut 0.5s; */
+  box-shadow: 0 4px 8px 0 rgba(170, 169, 169, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  /* transform: rotateY(360deg); */
+  /* padding: 2vw; */
+}

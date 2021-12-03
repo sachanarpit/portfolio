@@ -6,12 +6,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Button from "@mui/material/Button";
+import { Mydata } from "../db";
+
+import { nanoid } from "nanoid";
 
 const NavSec = styled.nav`
   background-color: black;
 `;
 
-const NavItemEffect = styled.div`
+export const NavItemEffect = styled.div`
   background-color: #f9004d;
   width: 100%;
   color: #f9004d;
@@ -37,59 +40,8 @@ const MobileBtn = styled.span`
 `;
 
 export const Header = () => {
+  console.log(Mydata);
   return (
-    // <div className="header">
-    //   <div className="header-wrapper">
-    //     <div className="header-left">
-    //       <div className="logo">
-    //         <a >
-    //           <img src="" alt="" />
-    //         </a>
-    //       </div>
-    //       <div className="ml--50">
-    //         <nav>
-    //           <ul className="mainmenu">
-    //             <li className="menu-item">
-    //               {" "}
-    //               <a href="" className="nav-link">
-    //                 Home
-    //               </a>{" "}
-    //             </li>
-    //             <li className="menu-item">About</li>
-    //             <li className="menu-item">Services</li>
-    //             <li className="menu-item">Portfolio</li>
-    //           </ul>
-    //         </nav>
-    //       </div>
-    //     </div>
-    //     <div className="header-right">
-    //       <div className="full-overlay"></div>
-    //       <div className="social-share">
-    //         <ul className="social-share-ui">
-    //           <li>
-    //             <a href="" className="icon">
-    //               f
-    //             </a>
-    //           </li>
-    //           <li>
-    //             <a href="" className="icon">
-    //               t
-    //             </a>
-    //           </li>
-    //           <li>
-    //             <a href="" className="icon">
-    //               l
-    //             </a>
-    //           </li>
-    //           <li>
-    //             <a href="" className="icon">
-    //               i
-    //             </a>
-    //           </li>
-    //         </ul>
-    //       </div>
-    //     </div>
-    //   </div>
     <NavSec>
       <NavHeader>
         <nav
@@ -98,10 +50,7 @@ export const Header = () => {
         >
           <div className="container">
             <a href="#HomeP" className="navbar-brand">
-              <Logo
-                src="https://i.ibb.co/QXYBG4z/a-removebg-preview.png"
-                alt=""
-              />
+              <Logo src={Mydata.logo} alt={Mydata.name} />
             </a>
             <button
               className="navbar-toggler"
@@ -120,62 +69,38 @@ export const Header = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav pull-right">
-                <li className="nav-item">
-                  <a href="#HomeP" className="nav-link active">
-                    <NavElement> Home</NavElement>
-                  </a>
-                  <NavItemEffect></NavItemEffect>
-                </li>
-                <li className="nav-item">
-                  <a href="#AboutP" className="nav-link">
-                    <NavElement> Services</NavElement>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#ServicesP" className="nav-link">
-                    <NavElement> Our Work</NavElement>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#ProjectP" className="nav-link">
-                    <NavElement> Pricing</NavElement>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#ContactP" className="nav-link">
-                    <NavElement> About</NavElement>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#P" className="nav-link">
-                    <NavElement> Contact</NavElement>
-                  </a>
-                </li>
+                {Mydata.navbar.map((item) => (
+                  // <div></div>
+                  <li key={item.id} className="nav-item">
+                    <a href={item.link} className="nav-link active">
+                      <NavElement> {item.title}</NavElement>
+                    </a>
+                    {/* <NavItemEffect></NavItemEffect> */}
+                  </li>
+                ))}
+
                 <li>
-                  {" "}
                   <ButtonGroup
                     style={{ marginRight: "20px", marginLeft: "20px" }}
                     variant="text"
                     aria-label="text button group"
                   >
-                    <Button style={{ color: "#f8004c" }}>
-                      <LinkedInIcon />
-                    </Button>
-                    <Button style={{ color: "#f8004c" }}>
-                      <GitHubIcon />
-                    </Button>
-                    <Button style={{ color: "#f8004c" }}>
-                      <TwitterIcon />
-                    </Button>
+                    {Mydata.social.map((item) => (
+                      <Button key={item.name} style={{ color: "#f8004c" }}>
+                        <a href={item.link} target="_blank">
+                          <img src={item.icon} alt={item.name} />
+                        </a>
+                      </Button>
+                    ))}
                   </ButtonGroup>
                 </li>
                 <li className="nav-item">
                   <a
-                    href="https://drive.google.com/file/d/1blOQ_H4swKT5Szmixy9x39IWKrVS8t90/view?usp=sharing"
+                    href={Mydata.resume}
                     target="_blank"
                     className="btn download-btn"
                   >
-                    <NavElement> Download Resume</NavElement>
+                    Download Resume
                   </a>
                 </li>
               </ul>

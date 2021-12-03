@@ -12,29 +12,29 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const images = [
-  {
-    label: "HomePage",
-    imgPath: "https://i.imgur.com/bmOYvvG.png",
-  },
-  {
-    label: "Search Page",
-    imgPath:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819783064/o0BPrMowgc.png",
-  },
-  {
-    label: "Order Page",
-    imgPath:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819907356/aKunpwwt8.png",
-  },
-  {
-    label: "Payment Page",
-    imgPath:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819919150/eUj6IOOoc.png",
-  },
-];
+// const images = [
+//   {
+//     label: "HomePage",
+//     imgPath: "https://i.imgur.com/bmOYvvG.png",
+//   },
+//   {
+//     label: "Search Page",
+//     imgPath:
+//       "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819783064/o0BPrMowgc.png",
+//   },
+//   {
+//     label: "Order Page",
+//     imgPath:
+//       "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819907356/aKunpwwt8.png",
+//   },
+//   {
+//     label: "Payment Page",
+//     imgPath:
+//       "https://cdn.hashnode.com/res/hashnode/image/upload/v1636819919150/eUj6IOOoc.png",
+//   },
+// ];
 
-function ImageSlide() {
+function ImageSlide({ images }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;

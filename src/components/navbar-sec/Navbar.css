@@ -1,5 +1,12 @@
 .download-btn {
   background-color: #f9004d;
+  color: white;
+}
+.download-btn:hover {
+  border: 1px solid #f9004d;
+  background-color: transparent;
+  color: #f9004d;
+  transition: 0.4s ease-in-out;
 }
 #components-layout-demo-fixed .logo {
   float: left;
@@ -10,4 +17,8 @@
 }
 .site-layout .site-layout-background {
   background: #fff;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

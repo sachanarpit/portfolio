@@ -2,6 +2,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import "./Service.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -22,7 +23,7 @@ export const ServiceGrid = () => {
       >
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
-            <div>
+            <div className="hoverE">
               <img
                 src="https://img.icons8.com/color/96/000000/react-native.png"
                 alt="skills"
@@ -34,7 +35,7 @@ export const ServiceGrid = () => {
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
-            <div>
+            <div className="hoverE">
               <img
                 src="https://img.icons8.com/color/96/000000/material-ui.png"
                 alt="skills"
@@ -46,7 +47,7 @@ export const ServiceGrid = () => {
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
-            <div>
+            <div className="hoverE">
               <img
                 src="https://img.icons8.com/color/96/000000/bootstrap.png"
                 alt="skills"
@@ -58,7 +59,7 @@ export const ServiceGrid = () => {
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <Item sx={{ backgroundColor: "transparent" }}>
-            <div>
+            <div className="hoverE">
               <img
                 src="https://img.icons8.com/nolan/96/css-filetype.png"
                 alt="skills"

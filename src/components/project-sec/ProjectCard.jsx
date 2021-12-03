@@ -9,7 +9,7 @@ import ImageSlide from "./ImageSlide";
 import CardPopup from "./CardPopUp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
-export default function ProjectCard() {
+export default function ProjectCard({ title, des, imgSlid, more, link }) {
   return (
     <Card elevation={10} sx={{ maxWidth: 345 }}>
       <CardContent>
@@ -19,21 +19,25 @@ export default function ProjectCard() {
           component="div"
           style={{ color: "#f8004c" }}
         >
-          <b> Make My Trip</b>
+          <b>{title} </b>
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Full Stack React Application Including Frontend and Backend
+          {des}
         </Typography>
       </CardContent>
-      <ImageSlide />
+      <ImageSlide images={imgSlid} />
       <CardActions>
         <Button size="small">
-          <GitHubIcon style={{ transform: "scale(1.5)", color: "#000000" }} />
+          <a href={link.github} target="_blank">
+            <GitHubIcon style={{ transform: "scale(1.5)", color: "#000000" }} />
+          </a>
         </Button>
         <Button size="small">
-          <InsertLinkIcon
-            style={{ transform: "scale(1.5)", color: "#313131" }}
-          />
+          <a href={link.website} target="_blank">
+            <InsertLinkIcon
+              style={{ transform: "scale(1.5)", color: "#313131" }}
+            />
+          </a>
         </Button>
         <CardPopup />
       </CardActions>
