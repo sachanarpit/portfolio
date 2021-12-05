@@ -91,13 +91,22 @@ export default function MobileNav() {
             aria-label="text button group"
           >
             <Button style={{ color: "#f8004c" }}>
-              <LinkedInIcon />
+              <a
+                href="https://www.linkedin.com/in/sachanarpit/"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </a>
             </Button>
             <Button style={{ color: "#f8004c" }}>
-              <GitHubIcon />
+              <a href="https://github.com/sachanarpit" target="_blank">
+                <GitHubIcon />
+              </a>
             </Button>
             <Button style={{ color: "#f8004c" }}>
-              <TwitterIcon />
+              <a href="https://twitter.com/sachanarpit1" target="_blank">
+                <TwitterIcon style={{ color: "#f8004c" }} />
+              </a>
             </Button>
           </ButtonGroup>
 

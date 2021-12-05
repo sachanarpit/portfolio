@@ -6,6 +6,7 @@ export const Mydata = {
   resume:
     "https://drive.google.com/file/d/1blOQ_H4swKT5Szmixy9x39IWKrVS8t90/view?usp=sharing",
   logo: "https://i.ibb.co/QXYBG4z/a-removebg-preview.png",
+  photo: "https://i.ibb.co/d5K8rPg/20210821-122531-2.jpg",
   social: [
     {
       link: "https://www.linkedin.com/in/sachanarpit/",
@@ -28,6 +29,7 @@ export const Mydata = {
       name: "twitter",
     },
   ],
+
   navbar: [
     {
       id: nanoid(10),
@@ -231,6 +233,28 @@ export const Mydata = {
           },
         ],
       },
+    },
+  ],
+  socialContact: [
+    {
+      link: "https://www.linkedin.com/in/sachanarpit/",
+      icon: "https://img.icons8.com/fluency/65/ffffff/linkedin.png",
+      name: "Linkedin",
+    },
+    {
+      link: "mailto:contact@arpitsachan.com",
+      icon: "https://img.icons8.com/external-kiranshastry-solid-kiranshastry/65/ffffff/external-email-interface-kiranshastry-solid-kiranshastry.png",
+      name: "Email",
+    },
+    {
+      link: "https://github.com/sachanarpit",
+      icon: "https://img.icons8.com/fluency/65/ffffff/github.png",
+      name: "Github",
+    },
+    {
+      link: "https://twitter.com/sachanarpit1",
+      icon: "https://img.icons8.com/color/65/ffffff/twitter--v2.png",
+      name: "twitter",
     },
   ],
 };

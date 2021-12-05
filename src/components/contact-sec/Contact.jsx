@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MainH1 } from "../about-sec/About";
+
 import { MainPara } from "../services-sec/Services";
 import { ContactForm } from "./Form";
 
@@ -14,8 +15,8 @@ export const Contact = () => {
     <div>
       <ContactSec id="ContactP">
         <div className="container">
-          <div className="row-md-2">
-            <div class="col align-self-start">
+          <div className="row">
+            <div className="col-md-12 ">
               <MainH1>Contact Me</MainH1>
               <MainPara className="mx-auto ">
                 There are many variations of passages of Lorem Ipsum <br />{" "}

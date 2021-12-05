@@ -62,7 +62,8 @@ export const ButtonMainP = styled.button`
     color: #f9004d;
     border: 1px solid #f9004d;
     background-color: transparent;
-    margin-top: 0.3em;
+    /* margin-top: 0.3em; */
+    transition: 0.4s ease-in-out;
   }
   @media only screen and (max-width: 700px) {
   }
