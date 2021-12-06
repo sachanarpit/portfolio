@@ -234,6 +234,135 @@ export const Mydata = {
         ],
       },
     },
+    {
+      id: nanoid(),
+      title: "Fabbag.com Clone",
+      descripsion: "Full Stack Application Including Frontend(EJS) and Backend",
+      imageSlider: [
+        {
+          label: "Home Page",
+          imgPath:
+            "https://camo.githubusercontent.com/b87856c00442a7cfbc09945b2a4a5e0d563a0eaec3cddd7091008797c8923a3b/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383331323832362f38565f586c644462342e706e67",
+        },
+        {
+          label: "Search Page",
+          imgPath:
+            "https://camo.githubusercontent.com/8312af56f7d74c2e7fe4e8303c733102a485b67016026ed788755d3598d3b25f/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383335363437332f41682d3253397658762e706e67",
+        },
+        {
+          label: "Product Page",
+          imgPath:
+            "https://camo.githubusercontent.com/272b367e79e248acba498bee4b980c297233d1592da95b170e799504cd9f8d9d/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383338373732342f4b4778465351514d332e706e67",
+        },
+        {
+          label: "Cart Page",
+          imgPath:
+            "https://camo.githubusercontent.com/c54261873e3291474ceb25915158c10d412d366887d8fe54297eef2c718dc4f6/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383433313030372f2d45494648643058372e706e67",
+        },
+        {
+          label: "Checkout Page",
+          imgPath:
+            "https://camo.githubusercontent.com/4f44ef99e38344b3a4d15f13434607c1b63c7d1aba107953317d8fe20a5acccd/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383439323438342f6950366575317748482e706e67",
+        },
+        {
+          label: "Payment Page",
+          imgPath:
+            "https://camo.githubusercontent.com/831e2fe69f61ba2abc35119662c4e3eec248fcb80cb33e4b2391c138377235b2/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383538343337312f794e4270384e4b6b372e706e67",
+        },
+        {
+          label: "ThankYou Page",
+          imgPath:
+            "https://camo.githubusercontent.com/ed60b431e11113c298ab76911b324030970c3e170ac94bf74316e2a4a7e548ee/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383639323330392f51557171714d33552d2e706e67",
+        },
+      ],
+      links: {
+        github: "https://github.com/sachanarpit/fabbag-clone",
+        website: "https://fabbag.herokuapp.com/",
+      },
+
+      details: {
+        des: "Hello readers, my name is Arpit Sachan. I learn Full stack web Development at Masai School. During unit-3 construct week of Masai School, I have to build the clone of Fabbag.com. This is a solo project during this project I created a full-stack application including frontend and backend",
+        impFun: [
+          "I created a search engine where you can find your relevant product from the database.",
+          "Each product have his share option and also you can choose you best package of the product by month.",
+          "On the checkout Page, you can do a payment Using Razorpay.",
+        ],
+        techBackend: ["Node Js", "Express", "MongoDB"],
+        techFrontend: ["EJS", "HTML", "CSS", "Bootstrap"],
+        Apis: [
+          {
+            title: "Payment Gateway",
+            ApiName: "Razorpay",
+            link: "https://razorpay.com/",
+          },
+        ],
+        images: [
+          {
+            label: "Home Page",
+            imgPath:
+              "https://camo.githubusercontent.com/b87856c00442a7cfbc09945b2a4a5e0d563a0eaec3cddd7091008797c8923a3b/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383331323832362f38565f586c644462342e706e67",
+          },
+          {
+            label: "Search Page",
+            imgPath:
+              "https://camo.githubusercontent.com/8312af56f7d74c2e7fe4e8303c733102a485b67016026ed788755d3598d3b25f/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383335363437332f41682d3253397658762e706e67",
+          },
+          {
+            label: "Product Page",
+            imgPath:
+              "https://camo.githubusercontent.com/272b367e79e248acba498bee4b980c297233d1592da95b170e799504cd9f8d9d/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383338373732342f4b4778465351514d332e706e67",
+          },
+          {
+            label: "Cart Page",
+            imgPath:
+              "https://camo.githubusercontent.com/c54261873e3291474ceb25915158c10d412d366887d8fe54297eef2c718dc4f6/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383433313030372f2d45494648643058372e706e67",
+          },
+          {
+            label: "Checkout Page",
+            imgPath:
+              "https://camo.githubusercontent.com/4f44ef99e38344b3a4d15f13434607c1b63c7d1aba107953317d8fe20a5acccd/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383439323438342f6950366575317748482e706e67",
+          },
+          {
+            label: "Payment Page",
+            imgPath:
+              "https://camo.githubusercontent.com/831e2fe69f61ba2abc35119662c4e3eec248fcb80cb33e4b2391c138377235b2/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383538343337312f794e4270384e4b6b372e706e67",
+          },
+          {
+            label: "ThankYou Page",
+            imgPath:
+              "https://camo.githubusercontent.com/ed60b431e11113c298ab76911b324030970c3e170ac94bf74316e2a4a7e548ee/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313633333038383639323330392f51557171714d33552d2e706e67",
+          },
+        ],
+        stepToClone: [
+          {
+            step: 1,
+            des: "open your terminal and paste this command",
+            code: "git clone https://github.com/sachanarpit/fabbag-clone.git",
+          },
+          {
+            step: 2,
+            des: "open this folder and run the command on the terminal",
+            code: "npm i express mongoose",
+          },
+          {
+            step: 3,
+            des: "after installation run this command to run the project on local machine",
+            code: "npm run server",
+          },
+          {
+            step: 4,
+            des: "In this step open the browser and open this link",
+            code: "http://localhost:2349/",
+          },
+        ],
+        links: [
+          {
+            github: "https://github.com/sachanarpit/make-my-trip",
+            website: "https://mmt-12r.pages.dev/",
+          },
+        ],
+      },
+    },
   ],
   socialContact: [
     {
