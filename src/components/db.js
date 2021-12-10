@@ -5,8 +5,8 @@ export const Mydata = {
   name: "Arpit Sachan",
   resume:
     "https://drive.google.com/file/d/1blOQ_H4swKT5Szmixy9x39IWKrVS8t90/view?usp=sharing",
-  logo: "https://i.ibb.co/QXYBG4z/a-removebg-preview.png",
-  photo: "https://i.ibb.co/d5K8rPg/20210821-122531-2.jpg",
+  logo: "/icon.png",
+  photo: "/photo.png",
   social: [
     {
       link: "https://www.linkedin.com/in/sachanarpit/",
@@ -62,7 +62,7 @@ export const Mydata = {
     Title: "Hello I'm Arpit Welcome to my World.",
   },
   AboutSec: {
-    photo: "https://i.ibb.co/d5K8rPg/20210821-122531-2.jpg",
+    photo: "/photo.png",
     introduction:
       "Self-motivated and results-oriented full-stack web developer with a focus on design and features. Creative person and problem-solver who is interested in building user-friendly products. Looking forward to working in a challenging role in a reputed company to show my creative skills.",
   },
