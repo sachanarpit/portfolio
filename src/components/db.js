@@ -123,6 +123,12 @@ export const Mydata = {
       issue: "Sep 2020",
       link: "http://ude.my/UC-0358ffc0-c737-4562-a761-fbcb9e709ac9",
     },
+    {
+      cName: "The Fundamental of Digital Marketing",
+      cGiver: "Google",
+      issue: "May 2020",
+      link: "https://drive.google.com/file/d/1P14QNotQcJUbzexU3ACOr66F4AoX179_/view?usp=sharing",
+    },
   ],
   Skills: [],
   Projects: [

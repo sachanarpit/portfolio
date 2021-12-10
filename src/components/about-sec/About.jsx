@@ -28,7 +28,7 @@ export const MainH1 = styled.h1`
 `;
 
 const AboutData = styled.div`
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 `;
 
 const AboutSec = styled.section`
