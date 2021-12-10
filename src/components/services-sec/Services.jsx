@@ -24,8 +24,8 @@ export const Services = () => {
         <div className="row-md-2 align-items-center text-center">
           <MainH1>Skills and FrameWork</MainH1>
           <MainPara className="mx-auto ">
-            There are many variations of passages of Lorem Ipsum <br />{" "}
-            available, but the majority have suffered alteration.
+            {/* There are many variations of passages of Lorem Ipsum <br />{" "}
+            available, but the majority have suffered alteration. */}
           </MainPara>
         </div>
       </div>

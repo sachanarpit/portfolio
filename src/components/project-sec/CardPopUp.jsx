@@ -52,7 +52,13 @@ export default function CardPopup({ more }) {
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
       >
-        <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
+        <DialogTitle id="scroll-dialog-title">
+          <center>
+            <b>
+              <h1>{more.name}</h1>
+            </b>
+          </center>
+        </DialogTitle>
         <DialogContent dividers={scroll === "paper"}>
           <DialogContentText
             id="scroll-dialog-description"
@@ -60,13 +66,6 @@ export default function CardPopup({ more }) {
             tabIndex={-1}
           >
             <div>
-              <center>
-                <b>
-                  {" "}
-                  <h1>{more.name}</h1>
-                </b>
-              </center>
-              <br />
               <div>
                 <h2>Description</h2>
                 <p>{more.des}</p>
@@ -147,10 +146,7 @@ export default function CardPopup({ more }) {
         </DialogContent>
         <DialogActions>
           <Button style={{ color: "#f8004c" }} onClick={handleClose}>
-            Cancel
-          </Button>
-          <Button style={{ color: "#f8004c" }} onClick={handleClose}>
-            Subscribe
+            Close
           </Button>
         </DialogActions>
       </Dialog>

@@ -19,8 +19,10 @@ export const Contact = () => {
             <div className="col-md-12 ">
               <MainH1>Contact Me</MainH1>
               <MainPara className="mx-auto ">
-                There are many variations of passages of Lorem Ipsum <br />{" "}
-                available, but the majority have suffered alteration.
+                You can also react me out at{" "}
+                <a href="mailto:contact@arpitsachan.com">
+                  contact@arpitsachan.com
+                </a>
               </MainPara>
               <ContactForm />
             </div>

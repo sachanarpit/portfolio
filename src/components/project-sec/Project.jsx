@@ -18,8 +18,8 @@ export const Project = () => {
           <div className="row-md-2 align-items-center text-center">
             <MainH1>Project & Work</MainH1>
             <MainPara className="mx-auto ">
-              There are many variations of passages of Lorem Ipsum <br />{" "}
-              available, but the majority have suffered alteration.
+              {/* There are many variations of passages of Lorem Ipsum <br />{" "}
+              available, but the majority have suffered alteration. */}
             </MainPara>
             <div className="container">
               <div className="row">
