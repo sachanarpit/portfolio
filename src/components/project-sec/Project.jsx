@@ -3,7 +3,6 @@ import { MainH1 } from "../about-sec/About";
 import { MainPara } from "../services-sec/Services";
 import ProjectCard from "./ProjectCard";
 import { Mydata } from "../db";
-// console.log("Mydata:", Mydata);
 
 const ProjectSec = styled.section`
   background-color: #191919;

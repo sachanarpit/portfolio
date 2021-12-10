@@ -39,7 +39,7 @@ export default function ProjectCard({ title, des, imgSlid, more, link }) {
             />
           </a>
         </Button>
-        <CardPopup />
+        <CardPopup more={more} />
       </CardActions>
     </Card>
   );

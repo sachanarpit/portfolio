@@ -40,7 +40,6 @@ const MobileBtn = styled.span`
 `;
 
 export const Header = () => {
-  console.log(Mydata);
   return (
     <NavSec>
       <NavHeader>

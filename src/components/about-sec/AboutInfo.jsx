@@ -3,8 +3,11 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Box from "@mui/material/Box";
+
 import { useState } from "react";
-import { AboutData } from "./AboutData";
+import { AboutData, AboutDataEx, AboutDataEd } from "./AboutData";
+
+import { Mydata } from "../db";
 
 export const AboutInfo = () => {
   const [value, setValue] = useState("1");
@@ -52,15 +55,15 @@ export const AboutInfo = () => {
         </TabList>
       </Box>
       <TabPanel value="1">
-        <AboutData />
+        <AboutData data={Mydata.Certificate} />
       </TabPanel>
       <TabPanel value="2">
         {" "}
-        <AboutData />
+        <AboutDataEx data={Mydata.Experience} />
       </TabPanel>
       <TabPanel value="3">
         {" "}
-        <AboutData />
+        <AboutDataEd data={Mydata.Education} />
       </TabPanel>
     </TabContext>
   );

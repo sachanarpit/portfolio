@@ -70,7 +70,7 @@ export const Mydata = {
     {
       sName: "Masai School, Bengluru, India",
       course: "Full Stack Web Developement",
-      duration: "2021 - 2022",
+      duration: "July 2021 - Feb 2022",
     },
     {
       sName: "Christ Church Inter College, Kanpur, India",
@@ -81,15 +81,9 @@ export const Mydata = {
   Experience: [
     {
       org: "Chronic Pain India, Gurgaon(Non Profit Organization)",
-      post: "Wordpress Developer (Freelancer Contract)",
+      post: "Wordpress Developer (Freelancer)",
       duration: "Jun 2021 - Present",
       link: "https://drive.google.com/file/d/1RtpUvGW3Hi7HmzL3v-d3ieB6Ffy1yjua/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook",
-    },
-    {
-      org: "Rozgar India",
-      post: "Wordpress Developer (Freelancer)- Varifed Seller",
-      duration: "Jan 2021 - May 2021",
-      link: "https://rozgaarindia.com/arpitsachan-Website-and-App-Developers-Website/109909",
     },
     {
       org: "Shakti Travels",
@@ -98,9 +92,15 @@ export const Mydata = {
       link: "https://drive.google.com/file/d/1-riJJCMkgdp0J_YxEI4AGwkfn01tA8oE/view?usp=sharing",
     },
     {
+      org: "Rozgar India",
+      post: "Wordpress Developer (Freelancer)- Varifed Seller",
+      duration: "Jan 2021 - May 2021",
+      link: "https://rozgaarindia.com/arpitsachan-Website-and-App-Developers-Website/109909",
+    },
+    {
       org: "Bhumi NGO",
       post: "Wordpress Developer (Internship)",
-      duration: "Feb 2021 - Mar 2021",
+      duration: "Nov 2020 - Dec 2020",
       link: "https://drive.google.com/file/d/1Bh-JyyR8ot_4bcgXEZXvls3vLTay2b4y/view?usp=sharing",
     },
   ],
@@ -171,14 +171,20 @@ export const Mydata = {
       },
 
       details: {
+        name: "Make My Trip",
         des: "Hello, my name is arpit. I am a student at Masai School so during the construct week, we have assigned a project of a clone of Makemytrip. it is a team project in my team there are three members - Arpit Sachan, Dharmesh Yadav, Rahul Kumar Yadav. we created a whole clone using MERN Stack in just a week.",
+        impFun: [
+          "I created a search engine where you can find your relevant product from the database.",
+          "Each product have his share option and also you can choose you best package of the product by month.",
+          "On the checkout Page, you can do a payment Using Razorpay.",
+        ],
         techBackend: ["Node Js", "Express", "MongoDB", "Nodemailer"],
         techFrontend: ["React", "Material UI", "Style-Components"],
         Apis: [
           {
             title: "Realtime flight search",
             ApiName: "Aviation Stack",
-            link: " https://www.twilio.com/",
+            link: "https://aviationstack.com/",
           },
           {
             title: "Otp Varification",
@@ -194,6 +200,28 @@ export const Mydata = {
             title: "Mail Service",
             ApiName: "NodeMailer",
             link: "https://nodemailer.com/",
+          },
+        ],
+        stepToClone: [
+          {
+            step: 1,
+            des: "open your terminal and paste this command",
+            code: "git clone https://github.com/sachanarpit/fabbag-clone.git",
+          },
+          {
+            step: 2,
+            des: "open this folder and run the command on the terminal",
+            code: "npm i",
+          },
+          {
+            step: 3,
+            des: "after installation run this command to run the project on local machine",
+            code: "npm run server",
+          },
+          {
+            step: 4,
+            des: "In this step open the browser and open this link",
+            code: "http://localhost:2349/",
           },
         ],
         images: [
@@ -281,6 +309,7 @@ export const Mydata = {
       },
 
       details: {
+        name: "Fabbag.com Clone",
         des: "Hello readers, my name is Arpit Sachan. I learn Full stack web Development at Masai School. During unit-3 construct week of Masai School, I have to build the clone of Fabbag.com. This is a solo project during this project I created a full-stack application including frontend and backend",
         impFun: [
           "I created a search engine where you can find your relevant product from the database.",

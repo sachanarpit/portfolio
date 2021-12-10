@@ -7,10 +7,10 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 
-export default function CardPopup() {
+export default function CardPopup({ more }) {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
-
+  console.log(more);
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);
     setScroll(scrollType);
@@ -59,14 +59,90 @@ export default function CardPopup() {
             ref={descriptionElementRef}
             tabIndex={-1}
           >
-            {[...new Array(50)]
-              .map(
-                () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
-              )
-              .join("\n")}
+            <div>
+              <center>
+                <b>
+                  {" "}
+                  <h1>{more.name}</h1>
+                </b>
+              </center>
+              <br />
+              <div>
+                <h2>Description</h2>
+                <p>{more.des}</p>
+              </div>
+              <div>
+                <h2>Important Functionality</h2>
+                <ul>
+                  {more.impFun.map((e) => (
+                    <li>{e}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2>Technology used in Project</h2>
+                <br />
+                <div>
+                  <h3>👉 FrontEnd Technology</h3>
+                  <ul>
+                    {more.techFrontend.map((e) => (
+                      <li>{e}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3>👉 Backend Technology</h3>
+                  <ul>
+                    {more.techBackend.map((e) => (
+                      <li>{e}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3>👉 API Used</h3>
+                  <ul>
+                    {more.Apis.map((e) => (
+                      <li>
+                        <div>
+                          <p>
+                            <b>
+                              {e.title}{" "}
+                              <a href={e.link} target="_blank">
+                                🔗
+                              </a>{" "}
+                            </b>
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <br />
+                <div>
+                  <h2>How to Run </h2>
+                  <div>
+                    {more.stepToClone.map((e) => (
+                      <div>
+                        <h3>➤ {e.step}st Step</h3>
+                        <p>{e.des}</p>
+                        <pre>
+                          <code
+                            style={{
+                              backgroundColor: "grey",
+                              color: "white",
+                              padding: "5px",
+                            }}
+                          >
+                            {e.code}
+                          </code>
+                        </pre>
+                        <br />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
