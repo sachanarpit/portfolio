@@ -130,7 +130,64 @@ export const Mydata = {
       link: "https://drive.google.com/file/d/1P14QNotQcJUbzexU3ACOr66F4AoX179_/view?usp=sharing",
     },
   ],
-  Skills: [],
+  Skills: [
+    {
+      logo: "https://img.icons8.com/color/96/000000/react-native.png",
+      label: "React",
+      cat: "frontend",
+    },
+    {
+      logo: "https://img.icons8.com/color/96/000000/material-ui.png",
+      label: "Material UI",
+      cat: "frontend",
+    },
+    {
+      logo: "https://img.icons8.com/color/96/000000/bootstrap.png",
+      label: "BootStrap",
+      cat: "frontend",
+    },
+    {
+      logo: "https://img.icons8.com/nolan/96/css-filetype.png",
+      label: "CSS",
+      cat: "frontend",
+    },
+    {
+      logo: "https://img.icons8.com/fluency/96/000000/node-js.png",
+      label: "Node JS",
+      cat: "backend",
+    },
+    {
+      logo: "https://img.icons8.com/nolan/96/js.png",
+      label: "Express JS",
+      cat: "backend",
+    },
+    {
+      logo: "https://img.icons8.com/color/96/000000/mongodb.png",
+      label: "MongoDB",
+      cat: "backend",
+    },
+    {
+      logo: "https://img.icons8.com/color/96/000000/amazon-web-services.png",
+      label: "AWS",
+      cat: "backend",
+    },
+    {
+      logo: "https://img.icons8.com/nolan/96/git.png",
+      label: "GIT",
+      cat: "backend",
+    },
+
+    {
+      logo: "https://img.icons8.com/nolan/96/wordpress.png",
+      label: "WordPress",
+      cat: "other",
+    },
+    {
+      logo: "https://img.icons8.com/external-wanicon-flat-wanicon/96/000000/external-seo-online-marketing-wanicon-flat-wanicon.png",
+      label: "SEO",
+      cat: "other",
+    },
+  ],
   Projects: [
     {
       id: nanoid(),
