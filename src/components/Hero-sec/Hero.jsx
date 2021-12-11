@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Mydata } from "../db";
 import "./Hero.css";
 
 const HeroHeading = styled.h1`
@@ -15,7 +16,7 @@ const HeroHeading = styled.h1`
   }
 `;
 
-const ColorSpan = styled.span`
+export const ColorSpan = styled.span`
   color: #f9004d;
 `;
 
@@ -80,7 +81,12 @@ export const Hero = () => {
               {" "}
               Hello I'm <ColorSpan>Arpit</ColorSpan> Welcome to my World.{" "}
             </HeroHeading>
-            <ButtonMainP>Download Resume</ButtonMainP>
+
+            <a href={Mydata.resume}>
+              <ButtonMainP>
+                <span> Download Resume</span>
+              </ButtonMainP>
+            </a>
           </div>
         </div>
       </div>

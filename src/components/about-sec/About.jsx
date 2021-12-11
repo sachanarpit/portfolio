@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Mydata } from "../db";
 
 import { AboutInfo } from "./AboutInfo";
 export const RowGrid = styled.div`
@@ -68,20 +69,14 @@ export const About = () => {
         <RowGrid className="row d-flex align-items-end ">
           <div className="col-md-6 text-center">
             <AboutPic
-              src="https://i.ibb.co/d5K8rPg/20210821-122531-2.jpg"
+              src="/photo.jpg"
               alt="Arpit picture"
               className="img-fluid"
             />
           </div>
           <div className="col-md-6">
             <AboutData className="col">
-              <AboutPara>
-                Self-motivated and results-oriented full-stack web developer
-                with a focus on design and features. Creative person and
-                problem-solver who is interested in building user-friendly
-                products. Looking forward to working in a challenging role in a
-                reputed company to show my creative skills.
-              </AboutPara>
+              <AboutPara>{Mydata.AboutSec.introduction}</AboutPara>
               <AboutInfo />
             </AboutData>
           </div>

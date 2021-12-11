@@ -64,7 +64,7 @@ export const Mydata = {
   AboutSec: {
     photo: "/photo.png",
     introduction:
-      "Self-motivated and results-oriented full-stack web developer with a focus on design and features. Creative person and problem-solver who is interested in building user-friendly products. Looking forward to working in a challenging role in a reputed company to show my creative skills.",
+      "My name is Arpit Sachan. I am a Software Developer who has specialization in MERN stack Web development. Problem solver web developer who interested in change ideas in a Application. A creative Developer who has experience in creating Application using React , Express , NodeJS , MongoDB and WordPress.",
   },
   Education: [
     {
