@@ -270,20 +270,21 @@ export const Mydata = {
       },
 
       details: {
-        name: "Fabbag.com Clone",
-        des: "Hello readers, my name is Arpit Sachan. I learn Full stack web Development at Masai School. During unit-3 construct week of Masai School, I have to build the clone of Fabbag.com. This is a solo project during this project I created a full-stack application including frontend and backend",
+        name: "MyFitnessPal",
+        des: "Hello readers during unit-5 construct week of Masai School, I have to build the myFitnessPal with Fresh UI/UX which is provided by UI/UX designers. This is a collabrative project with 3 members of team- Arpit Sachan, Ishan Singh Lamba, and Sumit Kumar. During this project I created a full-stack application including frontend and backend using MERN stack",
         impFun: [
-          "I created a search engine where you can find your relevant product from the database.",
-          "Each product have his share option and also you can choose you best package of the product by month.",
-          "On the checkout Page, you can do a payment Using Razorpay.",
+          "I created a search engine where you can find your relevant food item from the database.",
+          "I created whole backend of project with signup, login, search engine and task list apis. ",
+          "I contribute in Chart page with whole UI and functionality",
+          "I connect frontend to backend using Apis",
         ],
         techBackend: ["Node Js", "Express", "MongoDB"],
-        techFrontend: ["EJS", "HTML", "CSS", "Bootstrap"],
+        techFrontend: ["React", "Styled Components", "Bootstrap", "CSS"],
         Apis: [
           {
-            title: "Payment Gateway",
-            ApiName: "Razorpay",
-            link: "https://razorpay.com/",
+            title: "Used own apis",
+            ApiName: "myFitnesspal backend",
+            link: "https://github.com/sachanarpit/myfitnesspal-backend",
           },
         ],
         images: [
@@ -327,22 +328,22 @@ export const Mydata = {
           {
             step: 1,
             des: "open your terminal and paste this command",
-            code: "git clone https://github.com/sachanarpit/fabbag-clone.git",
+            code: "git clone https://github.com/sachanarpit/myfitnesspal.git",
           },
           {
             step: 2,
             des: "open this folder and run the command on the terminal",
-            code: "npm i express mongoose",
+            code: "yarn",
           },
           {
             step: 3,
             des: "after installation run this command to run the project on local machine",
-            code: "npm run server",
+            code: "yarn start",
           },
           {
             step: 4,
             des: "In this step open the browser and open this link",
-            code: "http://localhost:2349/",
+            code: "http://localhost:3000/",
           },
         ],
         links: [
