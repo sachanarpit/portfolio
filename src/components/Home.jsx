@@ -11,7 +11,7 @@ export const Home = () => {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setSpinner(false), 1000);
+    setTimeout(() => setSpinner(false), 100);
   }, []);
   return spinner === true ? (
     <div style={{ backgroundColor: "black", height: 1000 }}>
