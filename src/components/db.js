@@ -347,8 +347,8 @@ export const Mydata = {
         ],
         links: [
           {
-            github: "https://github.com/sachanarpit/make-my-trip",
-            website: "https://mmt-12r.pages.dev/",
+            github: "https://github.com/sachanarpit/myfitnesspal",
+            website: "https://myfitnesspal.pages.dev/",
           },
         ],
       },
