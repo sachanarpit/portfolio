@@ -270,8 +270,8 @@ export const Mydata = {
         },
       ],
       links: {
-        github: "https://github.com/sachanarpit/fabbag-clone",
-        website: "https://fabbag.herokuapp.com/",
+        github: "https://github.com/sachanarpit/myfitnesspal",
+        website: "https://myfitnesspal.pages.dev/",
       },
 
       details: {
