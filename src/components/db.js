@@ -152,6 +152,11 @@ export const Mydata = {
       cat: "frontend",
     },
     {
+      logo: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
+      label: "Tailwind",
+      cat: "frontend",
+    },
+    {
       logo: "https://img.icons8.com/fluency/96/000000/node-js.png",
       label: "Node JS",
       cat: "backend",
@@ -197,71 +202,71 @@ export const Mydata = {
       imageSlider: [
         {
           label: "Home Page",
-          imgPath: "/screenshots/home1.png",
+          imgPath: "/home1.png",
         },
         {
           label: "SignUp form 1",
-          imgPath: "/screenshots/s1.png",
+          imgPath: "/s1.png",
         },
         {
           label: "SignUp form 2",
-          imgPath: "/screenshots/s2.png",
+          imgPath: "/s2.png",
         },
         {
           label: "SignUp form 3",
-          imgPath: "/screenshots/s3.png",
+          imgPath: "/s3.png",
         },
         {
           label: "SignUp form 4",
-          imgPath: "/screenshots/s4.png",
+          imgPath: "/s4.png",
         },
         {
           label: "SignUp form 5",
-          imgPath: "/screenshots/s5.png",
+          imgPath: "/s5.png",
         },
         {
           label: "SignUp form 6",
-          imgPath: "/screenshots/s6.png",
+          imgPath: "/s6.png",
         },
         {
           label: "SignUp form 7",
-          imgPath: "/screenshots/s7.png",
+          imgPath: "/s7.png",
         },
         {
           label: "SignUp form 8",
-          imgPath: "/screenshots/s8.png",
+          imgPath: "/s8.png",
         },
         {
           label: "SignUp form 9",
-          imgPath: "/screenshots/s9.png",
+          imgPath: "/s9.png",
         },
         {
           label: "User Home",
-          imgPath: "/screenshots/uhome.png",
+          imgPath: "/uhome.png",
         },
         {
           label: "Add Food Chart Page",
-          imgPath: "/screenshots/chart.png",
+          imgPath: "/chart.png",
         },
         {
           label: "Search Page",
-          imgPath: "/screenshots/se1.png",
+          imgPath: "/se1.png",
         },
         {
           label: "Search Result Page",
-          imgPath: "/screenshots/se2.png",
+          imgPath: "/se2.png",
         },
         {
           label: "Nutrition Info popup",
-          imgPath: "/screenshots/se3.png",
+          imgPath: "/se3.png",
         },
         {
           label: "Added Food Page",
-          imgPath: "/screenshots/chart.png",
+          imgPath: "/chart.png",
         },
         {
           label: "Print Page",
-          imgPath: "/screenshots/print.png",
+          imgPath: "/print.png",
         },
       ],
       links: {
