@@ -90,6 +90,7 @@ function ImageSlide({ images }) {
                 }}
                 src={step.imgPath}
                 alt={step.label}
+                loading="lazy"
               />
             ) : null}
           </div>

@@ -71,6 +71,7 @@ export const About = () => {
             <AboutPic
               src="/photo.jpg"
               alt="Arpit picture"
+              loading="lazy"
               className="img-fluid"
             />
           </div>
