@@ -152,7 +152,7 @@ export const Mydata = {
       cat: "frontend",
     },
     {
-      logo: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
+      logo: "/tailwind.png",
       label: "Tailwind",
       cat: "frontend",
     },
