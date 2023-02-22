@@ -80,9 +80,21 @@ export const Mydata = {
   ],
   Experience: [
     {
+      org: "Playverse",
+      post: "Full Stack Developer",
+      duration: "Sep 2022 - Present",
+      link: "https://playverse.in/",
+    },
+    {
+      org: "DJ interactive Solutions- (Digital Jalebi)",
+      post: "Full Stack Web Developer",
+      duration: "Feb 2022 - Sep 2022",
+      link: "https://drive.google.com/file/d/1RtpUvGW3Hi7HmzL3v-d3ieB6Ffy1yjua/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook",
+    },
+    {
       org: "Chronic Pain India, Gurgaon(Non Profit Organization)",
       post: "Wordpress Developer (Freelancer)",
-      duration: "Jun 2021 - Present",
+      duration: "Jun 2021 - Dec 2021",
       link: "https://drive.google.com/file/d/1RtpUvGW3Hi7HmzL3v-d3ieB6Ffy1yjua/view?usp=drivesdk&usp=embed_facebook&usp=embed_facebook",
     },
     {
